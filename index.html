@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              bgColor: "#D4E6F1 ",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    style="font-family: 'Montserrat', sans-serif"
+    class="flex flex-col gap-[30px] justify-center items-center min-h-[100vh] bg-bgColor"
+  >
+    <h1 class="text-[200%] font-semibold text-center">
+      Stop Watch by Aman Verma
+    </h1>
+    <div
+      id="main-container"
+      class="flex flex-col bg-gray-100 gap-[50px] px-[30px] py-[20px] rounded-lg mx-[10px] max-w-[100%]"
+    >
+      <div class="watch flex justify-between gap-[50px]">
+        <span class="hr text-[150%] font-semibold"></span>
+        <span class="min text-[150%] font-semibold"></span>
+        <span class="sec text-[150%] font-semibold"></span>
+      </div>
+      <div class="btns flex flex-row flex-wrap justify-evenly gap-[100px]">
+        <button
+          id="start"
+          class="text-[150%] font-semibold bg-white bg-black rounded-lg p-[10px] text-white"
+        >
+          START
+        </button>
+        <button
+          id="stop"
+          class="text-[150%] font-semibold bg-white bg-black rounded-lg p-[10px] text-white"
+        >
+          STOP
+        </button>
+        <button
+          id="reset"
+          class="text-[150%] font-semibold bg-white bg-black rounded-lg p-[10px] text-white"
+        >
+          RESET
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
